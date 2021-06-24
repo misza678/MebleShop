@@ -1,0 +1,66 @@
+﻿@model MebleShop.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDKitchen)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDKitchen)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.startdate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.startdate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.enddate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.enddate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IDClient)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDClient)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdOrder }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
